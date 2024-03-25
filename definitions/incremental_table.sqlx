@@ -1,0 +1,9 @@
+config {
+    type: "incremental"
+}
+
+SELECT
+  fruit,
+  count,
+  CURRENT_TIMESTAMP() AS heure
+FROM ${ref("quickstart-table")}
